@@ -1,0 +1,97 @@
+body {
+	/*background: #9C9C9C;*/
+	margin: 0;
+}
+
+.statistics {
+	width: 600px;
+	margin: auto;
+	padding: 0;
+	margin: 5px 10px;
+	box-shadow: 1px 1px 10px gray;
+	float: left;
+}
+
+.statistics:hover {
+	box-shadow: 1px 1px 10px green;
+}
+
+ul {
+	text-align: center;
+	margin: 0px 0 10px;
+}
+
+ul:after {
+	content: ' i i i i i i i i ';
+	width : 600px;
+	margin: auto;
+	word-spacing: 613px;
+	padding-left: 613px;
+	visibility: hidden;
+}
+
+ul li {
+	display : inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
+/*TABLE STYLE*/
+
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  border-collapse: collapse;
+  color: #686461;
+  width: 100%;
+}
+caption {
+  padding: 6px;
+  color: white;
+  text-shadow: 2px 2px 2px green;
+  background: #8FD4C1;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+}
+
+tr, th {
+	font-size: 16px;
+}
+
+th {
+  border-bottom: 3px solid #B9B29F;
+  padding: 6px;
+  text-align: center;
+  font-size: 16px;
+}
+
+td {
+  padding: 6px;
+}
+
+tr:nth-child(odd) {
+  background: white;
+  text-align: center;
+  color: black;
+}
+
+tr:nth-child(even) {
+  background: #E8E6D1;
+  text-align: center;
+}
+
+th:hover {
+	box-shadow: none;
+}
+
+tbody tr:hover {
+	/*box-shadow: 0px 0px 10px 3px #BDB76B inset;*/
+	background: #FFDAB9;
+}
+
+tbody tr:first-child {
+	background: #C6E2FF;
+	/*background: #FFDAB9;*/
+	box-shadow: none;
+}
+
