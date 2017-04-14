@@ -36,7 +36,17 @@
 					VALUES('{$ip}', '{$date}', '{$quantity_of_calls}', '{$load_average} ({$cores} cores)', '{$note}')";
 			$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 			
-			sleep(REPORT_FREQUENCY);	
+			sleep(REPORT_FREQUENCY);
+			
+			$query = "SELECT COUNT(*) FROM servers_status";
+                        $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+                        $check_row_limit = mysqli_fetch_row($result);
+
+                        if ($check_row_limit[0] > 100000) {
+                                $query = "DELETE FROM servers_status LIMIT 10000";
+                                $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+                        }
+
 		}
 	}
 
