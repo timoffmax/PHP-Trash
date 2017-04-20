@@ -1,0 +1,36 @@
+html {
+	margin: 10px;
+}
+
+h2 {
+	margin-bottom: 25px;
+}
+
+.page-header {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+	color: red;
+	font-weight: bold;
+}
+
+.report-body h3, .report-body td {
+	text-align: center;
+}
+
+.report-body h3, .report-body h4 {
+	font-weight: bold;
+}
+
+.report-body thead {
+	font-weight: bold;
+	text-align: center;
+}
+
+.report-body tr>td:first-child {
+	font-weight: bold;
+}
+
+.container {
+	margin: auto;
+}
