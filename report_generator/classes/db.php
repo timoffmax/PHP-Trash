@@ -6,10 +6,10 @@ class DB
 {
 	private static $instance;
 	private $connection;
-	private $host = '95.69.245.26:14444';
-	private $user = 'CallWayUser';
-	private $password = 'Ghjnjnbg124';
-	private $db_name = 'CallWay';
+	private $host = '';
+	private $user = '';
+	private $password = '';
+	private $db_name = '';
 
 
 	private function __construct()
